@@ -8,13 +8,15 @@ import { BlurFade } from '@/components/magicui/blur-fade';
 import { Button } from '@/components/ui/button';
 import { Card, Carousel } from '@/components/ui/apple-cards-carousel';
 import Link from 'next/link';
-const page = () => {
+import Image from 'next/image';
+const Bridal = () => {
     const services = [
         {
             title: "Bridal Makeup",
             description: "Complete bridal look with trial session, featuring long-lasting, photo-ready makeup that enhances your natural beauty.",
             price: "From ₹350",
             features: ["Trial session included", "6+ hour wear", "Touch-up kit", "False lashes"]
+
         },
         {
             title: "Bridal Party",
@@ -29,44 +31,57 @@ const page = () => {
             features: ["Event-appropriate looks", "Quick touch-ups", "Professional products", "Travel included"]
         }
     ];
+    // const CorouselContent = () => {
+    //     return (
+    //         <div className='p-2 '>
+    //             <Image src="/bridal/bridal (1).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+    //         </div>
+    //     )
+    // }
     const data = [
         {
-            category: "Artificial Intelligence",
-            title: "You can do more with AI.",
+            category: "Bridal Look",
+            title: "Classic Red Bridal",
             src: "/bridal/bridal (1).jpg",
-            // content: <DummyContent />,
-        },
-        {
-            category: "Productivity",
-            title: "Enhance your productivity.",
-            src: "/bridal/bridal (2).jpg",
-            // content: <DummyContent />,
-        },
-        {
-            category: "Product",
-            title: "Launching the new Apple Vision Pro.",
-            src: "/bridal/bridal (3).jpg",
-            // content: <DummyContent />,
-        },
-        {
-            category: "Product",
-            title: "Maps for your iPhone 15 Pro Max.",
-            src: "/bridal/bridal (1).jpg",
-            // content: <DummyContent />,
-        },
-        {
-            category: "iOS",
-            title: "Photography just got better.",
-            src: "/bridal/bridal (2).jpg",
-            // content: <DummyContent />,
-        },
-        {
-            category: "iOS",
-            title: "Photography just got better.",
-            src: "/bridal/bridal (3).jpg",
-            // content: <DummyContent />,
-        },
+            content: <Image src="/bridal/bridal (1).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
+        },
+        {
+            category: "Bridal Look",
+            title: "Elegant Pastel Bride",
+            src: "/bridal/bridal (2).jpg",
+            content: <Image src="/bridal/bridal (2).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+
+        },
+        {
+            category: "Bridal Look",
+            title: "Royal Gold Glam",
+            src: "/bridal/bridal (3).jpg",
+            content: <Image src="/bridal/bridal (3).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+
+        },
+        {
+            category: "Bridal Look",
+            title: "Traditional Green Saree",
+            src: "/look-book/portrait-smiling-beautiful-brunette-woman-cute-dress-red-lips-flowers-background-concept-professional-photossesion-modern-greenhouse.jpg",
+            content: <Image src="/look-book/portrait-smiling-beautiful-brunette-woman-cute-dress-red-lips-flowers-background-concept-professional-photossesion-modern-greenhouse.jpg"
+                width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+
+        },
+        {
+            category: "Bridal Look",
+            title: "Outdoor Day Bride",
+            src: "/look-book/pretty-lady-orange-dress-holding-umbrella-thinking-nature-daytime.jpg",
+            content: <Image src="/look-book/pretty-lady-orange-dress-holding-umbrella-thinking-nature-daytime.jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+
+        },
+        {
+            category: "Bridal Look",
+            title: "Fashion Portrait Bridal",
+            src: "/look-book/fashion-portrait-stylish-woman-colorful-print-long-sleeve-top-pink-shorts-beach-tropical-background.jpg",
+            content: <Image src="/look-book/fashion-portrait-stylish-woman-colorful-print-long-sleeve-top-pink-shorts-beach-tropical-background.jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+
+        }
     ];
     const cards = data.map((card, index) => (
         <Card key={card.src} card={card} index={index} />
@@ -116,7 +131,7 @@ const page = () => {
                             <Link href="/look-book">
                                 <Button size={"sm"} variant={"destructive"} >View Gallery</Button>
                             </Link>
-                            
+
                         </div>
                     </div>
                     <BlurFade delay={0.5} className='mt-9 lg:mt-0' blur="15px" inView>
@@ -168,7 +183,7 @@ const page = () => {
                             </motion.div>
                         ))}
                     </div>
-                    {/* <div className='mt-20'>
+                    <div className='mt-20'>
                         <div className="w-full h-full py-20">
                             <motion.div
                                 initial={{ opacity: 0, y: -20 }}
@@ -178,16 +193,16 @@ const page = () => {
                                 className="text-5xl instrument-font text-center font-bold">
                                 View <span className="carattere-font">
                                     {/* highlighter not working */}
-                                    {/* Gallery
+                                    Gallery
                                 </span>
                             </motion.div>
                             <Carousel items={cards} />
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </section>
         </main>
     )
 }
 
-export default page
+export default Bridal

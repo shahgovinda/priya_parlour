@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Trending Style for the Season",
+    "image": "/ui/hero.jpg",
+    "date": "September 12, 2023",
+    "author": "Jayesha Khan",
+    "tag": "Hair",
+    "excerpt": "Trendy Haircut Styles has nec sumo mediem in. Airtute sanctus volumus ei mel in latine tritani accusam vel. Veniam iracundia vel ex. Te odio comprehensam quote qui at case adipiscing, legere accusam sed te. Ea sint suscipit vim, mel quando impedit ea, nec ut modo labore. In eos eleifend interpretaris. Oratio abhorreant elaboraret est ei...."
+  },
+  {
+    "id": 2,
+    "title": "The Ultimate Guide to Skincare Routines",
+    "image": "/skincare.jpg",
+    "date": "October 2, 2023",
+    "author": "Priya Sharma",
+    "tag": "Skincare",
+    "excerpt": "Discover the best skincare routines for every skin type. From cleansing to moisturizing, learn how to keep your skin glowing all year round."
+  },
+  {
+    "id": 3,
+    "title": "Bridal Makeup Trends 2023",
+    "image": "/bridal/bridal (1).jpg",
+    "date": "October 10, 2023",
+    "author": "Aarti Patel",
+    "tag": "Makeup",
+    "excerpt": "Explore the latest bridal makeup trends that are making waves this wedding season. Get inspired for your big day!"
+  },
+  {
+    "id": 4,
+    "title": "How to Choose the Right Haircut",
+    "image": "/haircut.jpg",
+    "date": "October 15, 2023",
+    "author": "Riya Mehra",
+    "tag": "Hair",
+    "excerpt": "Choosing the right haircut can transform your look. Here are tips to find the perfect style for your face shape."
+  },
+  {
+    "id": 5,
+    "title": "Waxing vs. Shaving: Pros and Cons",
+    "image": "/waxing.webp",
+    "date": "October 20, 2023",
+    "author": "Simran Kaur",
+    "tag": "Skincare",
+    "excerpt": "Debating between waxing and shaving? We break down the pros and cons of each hair removal method."
+  },
+  {
+    "id": 6,
+    "title": "Top 5 Facial Treatments for Glowing Skin",
+    "image": "/facial.webp",
+    "date": "October 25, 2023",
+    "author": "Neha Gupta",
+    "tag": "Facial",
+    "excerpt": "Facials can rejuvenate your skin. Here are the top 5 treatments you should try for a radiant complexion."
+  },
+  {
+    "id": 7,
+    "title": "The Art of Everyday Makeup",
+    "image": "/makeup.jpg",
+    "date": "November 1, 2023",
+    "author": "Sana Sheikh",
+    "tag": "Makeup",
+    "excerpt": "Master the basics of everyday makeup with these simple tips and tricks for a flawless look."
+  },
+  {
+    "id": 8,
+    "title": "Bridal Hairstyles to Try This Year",
+    "image": "/bridal/bridal (2).jpg",
+    "date": "November 5, 2023",
+    "author": "Jayesha Khan",
+    "tag": "Bridal",
+    "excerpt": "From classic buns to modern waves, check out the most popular bridal hairstyles for 2023."
+  },
+  {
+    "id": 9,
+    "title": "How to Maintain Colored Hair",
+    "image": "/hair.jpeg",
+    "date": "November 10, 2023",
+    "author": "Priya Sharma",
+    "tag": "Hair",
+    "excerpt": "Colored hair needs special care. Learn how to keep your color vibrant and hair healthy."
+  },
+  {
+    "id": 10,
+    "title": "The Benefits of Regular Facials",
+    "image": "/facial.webp",
+    "date": "November 15, 2023",
+    "author": "Aarti Patel",
+    "tag": "Facial",
+    "excerpt": "Regular facials can do wonders for your skin. Find out why you should make them a part of your routine."
+  },
+  {
+    "id": 11,
+    "title": "Makeup for Sensitive Skin",
+    "image": "/makeup.jpg",
+    "date": "November 20, 2023",
+    "author": "Simran Kaur",
+    "tag": "Makeup",
+    "excerpt": "Sensitive skin? Here are the best makeup products and techniques to avoid irritation."
+  },
+  {
+    "id": 12,
+    "title": "Pre-Bridal Skincare Checklist",
+    "image": "/bridal/bridal (3).jpg",
+    "date": "November 25, 2023",
+    "author": "Neha Gupta",
+    "tag": "Bridal",
+    "excerpt": "Get your skin wedding-ready with this essential pre-bridal skincare checklist."
+  },
+  {
+    "id": 13,
+    "title": "How to Get the Perfect Eyebrows",
+    "image": "/ui/hero.jpg",
+    "date": "December 1, 2023",
+    "author": "Riya Mehra",
+    "tag": "Skincare",
+    "excerpt": "Eyebrows frame your face. Learn how to shape and maintain them perfectly."
+  },
+  {
+    "id": 14,
+    "title": "Best Hairstyles for Short Hair",
+    "image": "/haircut.jpg",
+    "date": "December 5, 2023",
+    "author": "Sana Sheikh",
+    "tag": "Hair",
+    "excerpt": "Short hair, don’t care! Here are the best hairstyles to try if you have short hair."
+  },
+  {
+    "id": 15,
+    "title": "Natural Remedies for Glowing Skin",
+    "image": "/skincare.jpg",
+    "date": "December 10, 2023",
+    "author": "Jayesha Khan",
+    "tag": "Skincare",
+    "excerpt": "Try these natural remedies to achieve glowing, healthy skin without harsh chemicals."
+  },
+  {
+    "id": 16,
+    "title": "Bridal Entry Ideas for 2023",
+    "image": "/bridal/bridal (1).jpg",
+    "date": "December 15, 2023",
+    "author": "Priya Sharma",
+    "tag": "Bridal",
+    "excerpt": "Make your wedding entry unforgettable with these creative bridal entry ideas."
+  },
+  {
+    "id": 17,
+    "title": "How to Prevent Hair Fall",
+    "image": "/hair.jpeg",
+    "date": "December 20, 2023",
+    "author": "Aarti Patel",
+    "tag": "Hair",
+    "excerpt": "Hair fall can be stressful. Here’s how to prevent it and keep your hair strong."
+  },
+  {
+    "id": 18,
+    "title": "Quick Makeup Hacks for Busy Mornings",
+    "image": "/makeup.jpg",
+    "date": "December 25, 2023",
+    "author": "Simran Kaur",
+    "tag": "Makeup",
+    "excerpt": "Short on time? Try these quick makeup hacks to look your best in minutes."
+  },
+  {
+    "id": 19,
+    "title": "The Science Behind Facials",
+    "image": "/facial.webp",
+    "date": "December 28, 2023",
+    "author": "Neha Gupta",
+    "tag": "Facial",
+    "excerpt": "Ever wondered how facials work? We explain the science behind your favorite treatments."
+  },
+  {
+    "id": 20,
+    "title": "Bridal Lehenga Trends",
+    "image": "/bridal/bridal (2).jpg",
+    "date": "December 30, 2023",
+    "author": "Riya Mehra",
+    "tag": "Bridal",
+    "excerpt": "From pastels to bold reds, discover the latest bridal lehenga trends for the season."
+  }
+]

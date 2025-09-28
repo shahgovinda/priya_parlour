@@ -44,11 +44,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-{/* 
+
           <BubbleBackground
             interactive
-            className="fixed inset-0  flex  pointer-events-auto items-center justify-center rounded-xl"
-          /> */}
+            className="fixed inset-0 hidden lg:flex  pointer-events-auto items-center justify-center rounded-xl"
+          />
           <div className="relative flex flex-col">
             <Navbar />
             {children}

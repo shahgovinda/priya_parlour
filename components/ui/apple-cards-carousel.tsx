@@ -26,7 +26,7 @@ type Card = {
   src: string;
   title: string;
   category: string;
-  // content: React.ReactNode;
+  content: React.ReactNode;
 };
 
 export const CarouselContext = createContext<{
@@ -125,7 +125,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="rounded-3xl last:pr-[5%] md:last:pr-[33%]"
+                className=" last:pr-[5%] md:last:pr-[33%]"
               >
                 {item}
               </motion.div>
@@ -211,7 +211,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
+              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl  bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
             >
               <button
                 className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
@@ -231,7 +231,7 @@ export const Card = ({
               >
                 {card.title}
               </motion.p>
-              {/* <div className="py-10">{card.content}</div> */}
+              <div className="py-10">{card.content}</div>
             </motion.div>
           </div>
         )}
@@ -239,15 +239,15 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+        className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden  bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
-        <div className="relative z-40 p-8">
+        <div className="relative z-40 p-3 md:p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
             className="text-left font-sans text-sm font-medium text-white md:text-base"
           >
-            {card.category}
+            {/* {card.category} */}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}

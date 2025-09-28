@@ -39,7 +39,14 @@ const beauticians = [
 ];
 
 
-const page = () => {
+/**
+ * A component that displays a list of beauticians with their skills, names, and descriptions.
+ * Each beautician is displayed in a grid with a title, name, description, and image.
+ * The component also includes a link to the next section, which is the bridal section.
+ * The component uses motion and blur text effects to create a visually appealing animation.
+ * The component is responsive and will adjust to different screen sizes.
+ */
+const Beauticians = () => {
 
   return (
 
@@ -126,4 +133,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Beauticians;

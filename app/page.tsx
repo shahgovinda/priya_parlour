@@ -15,6 +15,10 @@ import Link from "next/link";
 export default function Home() {
     return (
         <main className="z-10">
+
+            <section>
+                
+            </section>
             <section className=" flex items-center justify-center   ">
 
                 <div className="grid grid-cols-1 gap-15 md:grid-cols-2 container lg:px-40 lg:py-40 px-5 py-20 mx-auto  border-red-500">

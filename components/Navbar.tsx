@@ -36,7 +36,7 @@ export function Navbar() {
                         <div className="h-1 w-6 rounded-full bg-foreground"></div>
                         <div className="h-1 w-3 rounded-full bg-foreground"></div>
                     </span>
-                    <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold ">priya.</Link>
+                    <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold ">Numa.</Link>
                 </div>
                 <NavigationMenu viewport={true} className="hidden lg:flex">
                     <NavigationMenuList className="instrument-font text-lg ">
@@ -59,6 +59,11 @@ export function Navbar() {
                         <NavigationMenuItem>
                             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                                 <Link href="/bridal">Bridal</Link>
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                                <Link href="/blog">Blogs</Link>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
 
@@ -105,6 +110,8 @@ export function Navbar() {
                             <Link href="/" onClick={() => setOpen(false)}>Home</Link>
                             <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
                             <Link href="/beauticians" onClick={() => setOpen(false)}>Beauticians</Link>
+                            <Link href="/look-book" onClick={() => setOpen(false)}>Look Book</Link>
+                            <Link href="/blog" onClick={() => setOpen(false)}>Blogs</Link>
                             <Link href="/bridal" onClick={() => setOpen(false)}>Bridal</Link>
                             <Link href="/about" onClick={() => setOpen(false)}>About</Link>
                             <Link href="/book-appointment" className="w-full flex items-center justify-center" onClick={() => setOpen(false)}>

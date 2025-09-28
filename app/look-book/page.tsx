@@ -5,7 +5,7 @@ import path from 'path';
 import { AnimatedGradientText } from '@/components/magicui/animated-gradient-text';
 import { BlurFade } from '@/components/magicui/blur-fade';
 
-const page = () => {
+const LookBook = () => {
 
     const imagesDir = path.join(process.cwd(), 'public/look-book');
     const images = fs.readdirSync(imagesDir).map((file) => {
@@ -40,4 +40,4 @@ const page = () => {
     )
 }
 
-export default page
+export default LookBook;

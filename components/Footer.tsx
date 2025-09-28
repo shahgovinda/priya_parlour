@@ -22,7 +22,7 @@ const Footer = () => {
                             <li className='flex items-center gap-2 text-sm'><Mail size={15} />priyajayprakash456@gmail.com</li>
                         </ul>
                     </div>
-                    {/* <div className='flex flex-col gap-5'>
+                    <div className='flex flex-col gap-5'>
                         <p className="text-xl instrument-font ">Recent Posts</p>
                         <ul className='space-y-5'>
                             <li className='flex items-center gap-2 text-sm cursor-pointer'>
@@ -47,16 +47,6 @@ const Footer = () => {
                                 </div>
                             </li>
                         </ul>
-                    </div> */}
-                    <div className='flex flex-col gap-5'>
-                        <p className="text-xl instrument-font ">Social Links</p>
-                        <div className='flex flex-col gap-4'>
-                            <Link href="https://www.instagram.com/priya_parlour28?igsh=dm84OHh2NHZqZGFp" target='_blank' className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Instagram</Link>
-                            <Link href="https://share.google/AKV00srM8tpfOrYXI" target='_blank' className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Google</Link>
-                            {/* <Link href="/" className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Facebook</Link>
-                            <Link href="/" className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Twitter</Link> */}
-                            <Link href="/" className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Youtube</Link>
-                        </div>
                     </div>
                     
 
