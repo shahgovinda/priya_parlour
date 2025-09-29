@@ -24,7 +24,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 gap-15 md:grid-cols-2 container lg:px-40 lg:py-40 px-5 py-20 mx-auto  border-red-500">
                     <div className=" flex gap-4 flex-col justify-center items-start">
                         <p className="text-3xl text-pink-500 font-bold carattere-font">
-                            Priya
+                            Numa
                         </p>
                         <BlurText
                             text="Explore a Hand Picked edit of skincare and makeup, guided by trust not trends."
@@ -42,7 +42,7 @@ export default function Home() {
                             <img
                                 className="w-full h-full object-cover"
                                 src="https://images.pexels.com/photos/2921424/pexels-photo-2921424.jpeg"
-                                alt="Priya"
+                                alt="Numa"
                             />
                         </BlurFade>
                     </div>

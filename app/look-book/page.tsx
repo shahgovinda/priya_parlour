@@ -32,7 +32,7 @@ const LookBook = () => {
             <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 mt-20 space-y-4">
                 {images.map((img, i) => (
                     <BlurFade key={i} delay={2} className='' blur="20px" inView>
-                        <img src={img.src} className="mb-4 w-full rounded- "  />
+                        <img src={img.src} className="mb-4 w-full "  />
                     </BlurFade>
                 ))}
             </div>

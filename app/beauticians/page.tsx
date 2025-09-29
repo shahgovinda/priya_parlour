@@ -8,29 +8,30 @@ import BlurText from '@/components/BlurText';
 import { BlurFade } from '@/components/magicui/blur-fade';
 import { CometCard } from '@/components/ui/comet-card';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const beauticians = [
   {
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmVtYWxlJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
+    image: "/beauticians/beautician1.avif",
     name: "Yelena Belova",
     description: "\"Expert in modern hair styling and color treatments.\"",
     skill: "Hair Stylist"
   },
   {
-    image: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg",
+    image: "/beauticians/beautician2.jpeg",
     name: "Sophia Lee",
     description: "\"Specializes in skincare routines and facial therapies.\"",
     skill: "Skin Care Specialist"
   },
   {
-    image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+    image: "/beauticians/beautician3.jpeg",
     name: "Sonia Gandhi",
     description: "\"Renowned for creative makeup artistry for events.\"",
     skill: "Makeup Artist"
   },
   {
-    image: "https://images.pexels.com/photos/2042455/pexels-photo-2042455.jpeg",
+    image: "/beauticians/beautician4.jpeg",
     name: "Emma Stone",
     description: "\"Professional nail technician with unique designs.\"",
     skill: "Nail Artist"
@@ -112,9 +113,9 @@ const Beauticians = () => {
             <div className="  flex items-center justify-center overflow-hidden">
               <CometCard className=' ' >
                 <BlurFade delay={0.5} className='' blur="15px" inView>
-                  <img
-                    className=" w-full h-full object-cover"
-                    src={item.image}
+                  <Image width={500} height={600}
+                    className=" object-cover"
+                    src={item.image} alt={item.name}
                   />
                 </BlurFade>
               </CometCard>
@@ -122,9 +123,9 @@ const Beauticians = () => {
           </motion.div>
         ))}
         <div className='mt-30'>
-          <Link href="/bridal" className='text-center gap-5'>
-            <p className="text-xl text-muted-foreground instrument-font">Next</p>
-            <p className="text-7xl text-muted-foreground  md:text-8xl lg:text-9xl  font-bold carattere-font">Bridal</p>
+          <Link href="/bridal" className='text-center gap-5 group'>
+            <p className="text-xl text-muted-foreground instrument-font group-hover:text-pink-500 transition-colors">Next</p>
+            <p className="text-7xl text-muted-foreground  md:text-8xl lg:text-9xl group-hover:text-foreground transition-colors font-bold carattere-font">Bridal</p>
           </Link>
         </div>
       </div>

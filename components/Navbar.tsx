@@ -102,7 +102,7 @@ export function Navbar() {
                             <span className="flex lg:hidden gap-1 flex-col px-2 py-3" role="button" aria-label="Open menu" tabIndex={0} onClick={() => setOpen(false)}>
                                 <X className="size-9 stroke-2" />
                             </span>
-                            <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold">priya.</Link>
+                            <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold">Numa.</Link>
                         </div>
 
                         <div className="flex flex-col gap-8 instrument-font text-4xl items-center justify-center h-full ">
@@ -120,7 +120,7 @@ export function Navbar() {
                         </div>
                         <div>
                             <div className="h-20 flex items-center justify-center gap-4 ">
-                                <Link href="https://www.instagram.com/priya_parlour28?igsh=dm84OHh2NHZqZGFp" target='_blank'>
+                                <Link href="https://www.instagram.com/Numa_parlour28?igsh=dm84OHh2NHZqZGFp" target='_blank'>
                                     <Instagram className="size-5" />
                                 </Link>
                                 <Link href="https://share.google/AKV00srM8tpfOrYXI" target='_blank' >
