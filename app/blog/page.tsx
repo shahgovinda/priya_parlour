@@ -1,10 +1,8 @@
-import { BlurFade } from '@/components/magicui/blur-fade'
+
 import { CalendarRange, Tag, UserRound } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import blogs from '@/data/blogs.json'
-import { Badge } from '@/components/ui/badge'
 
 const BlogsPage = () => {
     return (

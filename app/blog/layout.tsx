@@ -1,5 +1,5 @@
 
-import { BlurFade } from '@/components/magicui/blur-fade'
+
 import { CalendarRange, Tag, UserRound } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'

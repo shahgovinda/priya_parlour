@@ -1,13 +1,10 @@
-import React from 'react'
+
+import { use } from "react";
 import blogs from '@/data/blogs.json'
 import { CalendarRange, Tag, UserRound } from 'lucide-react'
 import Image from 'next/image'
 
-interface BlogPageProps {
-    params: {
-        id: number
-    }
-}
+
 
 interface Blog {
     id: number;
@@ -19,9 +16,9 @@ interface Blog {
     content?: string;
 }
 
-const Blog = ({ params }: BlogPageProps) => {
-    const { id } = params
-    const blog = blogs.find((blog:Blog) => blog.id == id);
+const Blog = ({params}: {params: Promise<{ id: string }>}) => {
+    const { id } = use(params);
+    const blog = blogs.find((blog: Blog) => blog.id.toString() === id);
 
     if (!blog) {
         return (
