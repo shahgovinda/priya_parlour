@@ -5,7 +5,9 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { BubbleBackground } from "@/components/animate-ui/backgrounds/bubble";
 import Footer from "@/components/Footer";
-// import  Link from "next/link";
+import { Pointer } from "@/components/ui/pointer";
+// import CustomPointer from "@/components/CustomPointer";
+
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -53,11 +55,22 @@ export default function RootLayout({
           <div className="relative flex flex-col">
             <Navbar />
             {children}
-            <Footer/>
+            <Footer />
           </div>
-         
-          
+
         </ThemeProvider>
+        <Pointer>
+           <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="12" cy="12" r="10" className="fill-purple-500" />
+            <circle cx="12" cy="12" r="5" className="fill-white" />
+          </svg>
+        </Pointer >
       </body>
     </html>
   );
