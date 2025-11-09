@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { BubbleBackground } from "@/components/animate-ui/backgrounds/bubble";
 import Footer from "@/components/Footer";
+// import  Link from "next/link";
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -54,6 +55,7 @@ export default function RootLayout({
             {children}
             <Footer/>
           </div>
+         
           
         </ThemeProvider>
       </body>

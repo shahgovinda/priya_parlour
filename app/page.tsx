@@ -1,30 +1,50 @@
 import BlurText from "@/components/BlurText";
 import Section3 from "@/components/homepage/Section3";
+import { motion } from "framer-motion";
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { NumberTicker } from "@/components/magicui/number-ticker";
 import { ServicesMenu } from "@/components/homepage/ServiceMenu";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { motion } from "framer-motion"
-import { CometCard } from "@/components/ui/comet-card";
+
 import TestimonialsSection from "@/components/homepage/TestimonialsSection";
 import Link from "next/link";
+import TextFromAbove from "@/components/TextFromAbove";
+import { Constant } from "@/lib/constants";
+import BlogSection from "@/components/homepage/BlogSection";
+import TestimonialsSectionVertical from "@/components/homepage/TestimonialsSectionVertical";
 
 export default function Home() {
     return (
         <main className="z-10">
 
-            <section>
-                
-            </section>
+            {/* <section className="bg-[url('/makeup.jpg')] bg-cover min-h-[calc(100vh-80px)] bg-center relative ">
+                <div className=" absolute inset-0 min-h-full bg-gradient-to-b from-black/50 via-transparent to-black/50 ">
+
+                </div>
+               <TextFromAbove/>
+                <BlurText
+                    text="Numa."
+                    delay={10}
+                    animateBy="letters"
+                    direction="bottom"
+                    className="absolute -bottom-10 right-10  text-white text-[15rem] font-bold instrument-font"
+                />
+                <BlurText
+                    text="Explore a Hand Picked edit of skincare and makeup, guided by trust not trends."
+                    delay={150}
+                    animateBy="words"
+                    direction="bottom"
+                    className="absolute bottom-10 w-64 left-10 text-white text-xl font-bold instrument-font"
+                />
+            </section> */}
             <section className=" flex items-center justify-center   ">
 
                 <div className="grid grid-cols-1 gap-15 md:grid-cols-2 container lg:px-40 lg:py-40 px-5 py-20 mx-auto  border-red-500">
                     <div className=" flex gap-4 flex-col justify-center items-start">
                         <p className="text-3xl text-pink-500 font-bold carattere-font">
-                            Numa
+                            {Constant.SiteName}
                         </p>
                         <BlurText
                             text="Explore a Hand Picked edit of skincare and makeup, guided by trust not trends."
@@ -54,7 +74,7 @@ export default function Home() {
                 <div className="container lg:px-40 lg:py-40 px-5 py-20 grid grid-cols-1 lg:grid-cols-3 gap-30 mx-auto ">
                     <div className="flex flex-col gap-5  items-center w-full lg:items-start ">
                         <div className="flex flex-col items-center lg:flex-row gap-8 ">
-                            <div className="inline-flex border -space-x-2">
+                            <div className="inline-flex  -space-x-2">
                                 <Avatar>
                                     <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                                 </Avatar>
@@ -117,6 +137,10 @@ export default function Home() {
 
             <section className=" border-yellow-600 py-30 ">
                 <TestimonialsSection />
+            </section>
+
+            <section className=" border-yellow-600 py-30 ">
+                <BlogSection />
             </section>
         </main>
     );

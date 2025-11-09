@@ -7,6 +7,7 @@ import { BubbleBackground } from '@/components/animate-ui/backgrounds/bubble';
 import BlurText from '@/components/BlurText';
 import { BlurFade } from '@/components/magicui/blur-fade';
 import Link from 'next/link';
+import { Constant } from '@/lib/constants';
 
 const page = () => {
     return (
@@ -45,7 +46,7 @@ const page = () => {
                     // whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 1 }}
                     className=" flex items-center justify-center rounded-full lg:w-[70rem] mt-5">
-                    <p className="text-sm leading-7 font-light flex justify-center text-center ">At Numa Parlour we curate more than just captivating hairstyles; we craft experiences. Beyond our salon chairs, we proudly present an aspirational lifestyle store, showcasing the artistry and passion of local and international artisans. Every detail is a testament to our dedication to excellence and mission to elevate everyday moments into unforgettable memories. Join us on a journey of beauty, craft, and inspiration, where your aspirations meet our artistry.</p>
+                    <p className="text-sm leading-7 font-light flex justify-center text-center ">At {Constant.SiteName} Parlour we curate more than just captivating hairstyles; we craft experiences. Beyond our salon chairs, we proudly present an aspirational lifestyle store, showcasing the artistry and passion of local and international artisans. Every detail is a testament to our dedication to excellence and mission to elevate everyday moments into unforgettable memories. Join us on a journey of beauty, craft, and inspiration, where your aspirations meet our artistry.</p>
                 </motion.div>
             </div>
             <div className=''>
@@ -75,7 +76,7 @@ const page = () => {
                         </h1>
                     </div>
                     <div>
-                        <h3 className='text-justify text-sm font-light'>Welcome to Numa Parlour. We have been servicing the Greater Toronto Area for the past 19 years. We offer a full range of the latest beauty and grooming services. We are passionate about helping you with your hair care, skin care, and beauty needs! -MONA (LIC. HAIR STYLIST) If you are looking for flawless skin and beauty services, Numa Parlour is where you need to be. Our excellent professional team knows what your skin and hair need and offer services accordingly. Right from bridal services to beauty services we offer you all under one roof. We offer you a luscious range of face, hair, and skin services specially designed for your skin. Have special skin needs? For all your grooming needs, reach us and we would be glad to help. Book us now!</h3>
+                        <h3 className='text-justify text-sm font-light'>Welcome to {Constant.SiteName} Parlour. We have been servicing the Greater Toronto Area for the past 19 years. We offer a full range of the latest beauty and grooming services. We are passionate about helping you with your hair care, skin care, and beauty needs! -MONA (LIC. HAIR STYLIST) If you are looking for flawless skin and beauty services,  {Constant.SiteName} Parlour is where you need to be. Our excellent professional team knows what your skin and hair need and offer services accordingly. Right from bridal services to beauty services we offer you all under one roof. We offer you a luscious range of face, hair, and skin services specially designed for your skin. Have special skin needs? For all your grooming needs, reach us and we would be glad to help. Book us now!</h3>
                     </div>
                 </div>
                 <Link href="/beauticians" className='text-center gap-5 group '>

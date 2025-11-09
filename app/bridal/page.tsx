@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card, Carousel } from '@/components/ui/apple-cards-carousel';
 import Link from 'next/link';
 import Image from 'next/image';
+import { InstagramEmbed } from 'react-social-media-embed';
 const Bridal = () => {
     const services = [
         {
@@ -16,7 +17,6 @@ const Bridal = () => {
             description: "Complete bridal look with trial session, featuring long-lasting, photo-ready makeup that enhances your natural beauty.",
             price: "From ₹350",
             features: ["Trial session included", "6+ hour wear", "Touch-up kit", "False lashes"]
-
         },
         {
             title: "Bridal Party",
@@ -200,6 +200,13 @@ const Bridal = () => {
                         </div>
                     </div>
                 </div>
+                <div className='flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-5'>
+                    <InstagramEmbed url="https://www.instagram.com/p/DNSZ0GxtFbj/?utm_source=ig_web_copy_link" width={400} />
+                    <InstagramEmbed url="https://www.instagram.com/p/DPJSmu7iN63/?utm_source=ig_web_copy_link" width={400} />
+                    <InstagramEmbed url="https://www.instagram.com/p/DQwteteCIdz/?utm_source=ig_web_copy_link" width={400} />
+                    
+                </div>
+               
             </section>
         </main>
     )

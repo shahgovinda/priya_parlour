@@ -6,6 +6,7 @@ import Link from 'next/link'
 import React from 'react'
 import blogs from '@/data/blogs.json'
 import { Badge } from '@/components/ui/badge'
+import { Constant } from '@/lib/constants'
 
 interface BlogLayoutProps {
     children: React.ReactNode;
@@ -15,7 +16,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
     return (
         <main className='bg-background pb-10'>
             <section className=" w-full h-50 md:h-70 flex items-center justify-center bg-[url('/ui/blog.jpg')] bg-cover bg-center">
-                <h1 className=' text-5xl  lg:text-8xl font-bold carattere-font text-black mr-2'>Numa </h1><h1 className=' text-5xl md:4xl lg:text-8xl font-bold instrument-font text-black'> Blogs</h1>
+                <h1 className=' text-5xl  lg:text-8xl font-bold carattere-font text-black mr-2'> {Constant.SiteName} </h1><h1 className=' text-5xl md:4xl lg:text-8xl font-bold instrument-font text-black'> Blogs</h1>
             </section>
 
             <section className='lg:w-3/4 px-4 lg:px-20 mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mt-10'>
@@ -30,7 +31,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
                             <h1 className='text-4xl font-bold instrument-font'>Recent Posts</h1>
                             <div className='space-y-5 mt-5'>
                                 {
-                                    blogs.slice(0, 3).map(({ id, title, image, date, author, tag, excerpt }) => (
+                                    blogs.slice(0, 4).map(({ id, title, image, date, author, tag, excerpt }) => (
                                         <Link href={`/blog/${id}`} className='flex items-center gap-2 text-sm cursor-pointer' key={id}>
                                             <Image src={image} width={90} height={90} className='size-14 object-cover' alt="" />
                                             <div className='space-y-1'>
@@ -42,7 +43,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
                                 }
                             </div>
                         </div>
-                        <div className='mt-10'>
+                        {/* <div className='mt-10'>
                             <h1 className='text-4xl font-bold instrument-font'>Popular Topics</h1>
                             <div className='flex flex-wrap gap-3 mt-5'>
                                 {
@@ -52,7 +53,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
                                 }
 
                             </div>
-                        </div>
+                        </div> */}
                         {
                             blogs.slice(6, 7).map(({ id, title, image, date, author, tag, excerpt }) => (
                                 <article className='hidden lg:flex flex-col gap-4 mt-10 ' key={id}>

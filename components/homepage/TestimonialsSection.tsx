@@ -2,7 +2,8 @@
 import React from 'react'
 import { Marquee } from '../magicui/marquee';
 import { cn } from '@/lib/utils';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import { InstagramEmbed } from 'react-social-media-embed';
 const reviews = [
   {
     name: "Emily",
@@ -20,7 +21,7 @@ const reviews = [
     name: "Jen",
     username: "@jenmakeup",
     body: "I got my makeup done for a wedding at this parlour and it was stunning! The makeup artist was so skilled and listened to exactly what I wanted.",
-    img: "girl.png",
+    img: "/girl.jpg",
   },
   {
     name: "Kate",
@@ -42,9 +43,18 @@ const reviews = [
   },
 ];
 
+const insta_urls = [
+  "https://www.instagram.com/p/DNSZ0GxtFbj/?utm_source=ig_web_copy_link",
+  "https://www.instagram.com/p/DPGMoDvDJci/?utm_source=ig_web_copy_link",
+  "https://www.instagram.com/p/C0b53-Gg5Mv/?utm_source=ig_web_copy_link",
+
+
+
+];
+
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
- 
+
 const ReviewCard = ({
   img,
   name,
@@ -67,7 +77,7 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full object-cover size-10"  alt="" src={img} />
+        <img className="rounded-full object-cover size-10" alt="" src={img} />
         <div className="flex flex-col">
           <figcaption className="text-2xl instrument-font font-bold dark:text-white">
             {name}
@@ -81,38 +91,45 @@ const ReviewCard = ({
 };
 
 const TestimonialsSection = () => {
-    return (
-        <div>
-             <div className="flex flex-col items-center justify-center gap-5 mb-20">
-                <p className="text-2xl font-bold text-pink-600 carattere-font">Testimonials</p>
-                <motion.div
-                    initial={{ opacity: 0, y: -20 }}
-                    // animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    className="text-5xl text-center instrument-font font-bold">
-                    Where clients <span className="carattere-font">
-                        {/* highlighter not working */}
-                        Say
-                    </span> about me
-                </motion.div>
-            </div>
-            <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-                <Marquee pauseOnHover className="[--duration:20s]">
-                    {firstRow.map((review) => (
-                        <ReviewCard key={review.username} {...review} />
-                    ))}
-                </Marquee>
-                <Marquee reverse pauseOnHover className="[--duration:20s]">
-                    {secondRow.map((review) => (
-                        <ReviewCard key={review.username} {...review} />
-                    ))}
-                </Marquee>
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <div className="flex flex-col items-center justify-center gap-5 mb-20">
+        <p className="text-2xl font-bold text-pink-600 carattere-font">Testimonials</p>
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          // animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="text-5xl text-center instrument-font font-bold">
+          What clients <span className="carattere-font">
+            {/* highlighter not working */}
+            Say
+          </span> about us
+        </motion.div>
+      </div>
+      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+        <Marquee pauseOnHover className="[--duration:20s]">
+          {firstRow.map((review) => (
+            <ReviewCard key={review.username} {...review} />
+          ))}
+        </Marquee>
+        <Marquee reverse pauseOnHover className="[--duration:20s]">
+          {secondRow.map((review) => (
+            <ReviewCard key={review.username} {...review} />
+          ))}
+        </Marquee>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
+      </div>
+
+      <p className="text-2xl font-bold text-pink-600 mt-10 text-center carattere-font">Instagram</p>
+      <div className=' container mx-auto mt-5 flex flex-wrap gap-10 justify-center items-center'>
+        {insta_urls.map((url, index) => (
+          <InstagramEmbed key={index} url={url} width={400} />
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default TestimonialsSection
