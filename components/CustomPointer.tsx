@@ -1,9 +1,9 @@
 import React from 'react'
 import { Pointer } from './ui/pointer'
 import { motion } from 'framer-motion'
-type Props = {}
 
-const CustomPointer = (props: Props) => {
+
+const CustomPointer = () => {
   return (
          <Pointer>
           <motion.div
