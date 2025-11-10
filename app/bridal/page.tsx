@@ -42,14 +42,14 @@ const Bridal = () => {
         {
             category: "Bridal Look",
             title: "Classic Red Bridal",
-            src: "/bridal/bridal (1).jpg",
+            src: "/sarita.JPG",
             content: <Image src="/bridal/bridal (1).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
         },
         {
             category: "Bridal Look",
             title: "Elegant Pastel Bride",
-            src: "/bridal/bridal (2).jpg",
+            src: "/priyanka.JPG",
             content: <Image src="/bridal/bridal (2).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
         },
