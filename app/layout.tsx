@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { BubbleBackground } from "@/components/animate-ui/backgrounds/bubble";
 import Footer from "@/components/Footer";
+import { FaWhatsapp } from "react-icons/fa"; // ✅ add this import
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -41,7 +42,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Disable zoom but allow scroll */}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -67,6 +67,17 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
+
+          {/* ✅ Floating WhatsApp Button */}
+          <a
+            href="https://wa.me/918452017063?text=Hello%20Priya%20Parlour,%20this%20is%20a%20message%20from%20your%20website."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-float"
+            aria-label="Chat on WhatsApp"
+          >
+            <FaWhatsapp className="whatsapp-icon" />
+          </a>
         </ThemeProvider>
       </body>
     </html>
