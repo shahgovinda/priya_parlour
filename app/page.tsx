@@ -61,8 +61,8 @@ export default function Home() {
                         <BlurFade delay={0.5} blur="10px" inView>
                             <img
                                 className="w-full h-full object-cover"
-                                src="https://images.pexels.com/photos/2921424/pexels-photo-2921424.jpeg"
-                                alt="Numa"
+                                src="/pia.jpg"
+                                alt="Priya"
                             />
                         </BlurFade>
                     </div>
@@ -96,7 +96,7 @@ export default function Home() {
                         <span>
                             <span className="flex item-center gap-2">
                                 <NumberTicker
-                                    value={5}
+                                    value={10}
                                     className="whitespace-pre-wrap  instrument-font font-bold tracking-tighter text-black dark:text-white"
                                 />
                                 <p className="text-6xl instrument-font font-bold  text-black dark:text-white">+</p>
@@ -116,7 +116,7 @@ export default function Home() {
                         <span>
                             <span className="flex item-center gap-2">
                                 <NumberTicker
-                                    value={40}
+                                    value={50}
                                     className="whitespace-pre-wrap  instrument-font font-bold tracking-tighter text-black dark:text-white"
                                 />
                                 <p className="text-6xl instrument-font font-bold  text-black dark:text-white">+</p>
