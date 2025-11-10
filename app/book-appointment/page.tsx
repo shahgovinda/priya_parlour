@@ -87,10 +87,37 @@ export default function Page() {
                 <div className=" p-10 h-full ">
                     <form onSubmit={handleSubmit} className=' flex flex-col justify-between h-full gap-5 md:gap-0'>
                         <div className='flex gap-5'>
-                            <Input type="text" name="name" id="name" placeholder='Enter your Name' required />
+                            <Input 
+                                type="text" 
+                                name="name" 
+                                id="name" 
+                                placeholder='Enter your Name' 
+                                pattern="[A-Za-z ]+" 
+                                title="Please enter letters only"
+                                onKeyPress={(e) => {
+                                    if (!/[A-Za-z ]/.test(e.key)) {
+                                        e.preventDefault();
+                                    }
+                                }}
+                                required 
+                            />
                         </div>
                         <div className='flex gap-5'>
-                            <Input type="tel" name="phone" id="phone" placeholder='Enter your Phone Number' required />
+                            <Input 
+                                type="tel" 
+                                name="phone" 
+                                id="phone" 
+                                placeholder='Enter your Phone Number' 
+                                pattern="[0-9]{10}" 
+                                maxLength={10}
+                                title="Please enter a valid 10-digit phone number"
+                                onKeyPress={(e: React.KeyboardEvent<HTMLInputElement>) => {
+                                    if (!/[0-9]/.test(e.key) || (e.target as HTMLInputElement).value.length >= 10) {
+                                        e.preventDefault();
+                                    }
+                                }}
+                                required 
+                            />
                         </div>
                         <div className='flex gap-5'>
                             <Input type="email" name="email" id="email" placeholder='Enter your Email' required />
@@ -161,7 +188,12 @@ export default function Page() {
                                     </Button>
                                 </PopoverTrigger>
                                 <PopoverContent className="w-auto p-0">
-                                    <Calendar mode="single" selected={date} onSelect={setDate} />
+                                    <Calendar 
+                                        mode="single" 
+                                        selected={date} 
+                                        onSelect={setDate}
+                                        disabled={(date) => date <= new Date()} 
+                                    />
                                 </PopoverContent>
                             </Popover>
                             {/* Time input */}

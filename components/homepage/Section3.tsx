@@ -14,7 +14,7 @@ const Section3 = () => {
             <div className=" h-full gap-10  items-center flex flex-col lg:flex-row  border-blue-600">
 
                 <div className="hidden lg:block">
-                    <BlurFade offset={80} delay={0.8} direction="right" blur="10px" inView>
+                    <BlurFade offset={30} delay={0.8} direction="right" blur="10px" inView>
                         {/* <img
                             className=" h-84 w-full lg:w-54 object-cover"
                             src="https://www.shutterstock.com/image-photo/skin-care-woman-beauty-face-600nw-2206367897.jpg"
@@ -61,8 +61,8 @@ const Section3 = () => {
                 </div>
 
                 <div className=" items-center inline-flex justify-center ">
-                    <BlurFade offset={80} delay={0.8} direction="left" blur="10px" inView>
-                        <div className='relative h-84 w-94 lg:w-54 '>
+                    <BlurFade offset={30} delay={0.8} direction="left" blur="10px" inView>
+                        <div className='relative h-84 w-82 lg:w-54 '>
                             <Image
                                 fill
                                 className="object-cover"
