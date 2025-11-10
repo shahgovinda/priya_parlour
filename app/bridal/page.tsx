@@ -15,20 +15,20 @@ const Bridal = () => {
         {
             title: "Bridal Makeup",
             description: "Complete bridal look with trial session, featuring long-lasting, photo-ready makeup that enhances your natural beauty.",
-            price: "From ₹350",
+            price: "From ₹2000",
             features: ["Trial session included", "6+ hour wear", "Touch-up kit", "False lashes"]
         },
         {
             title: "Bridal Party",
             description: "Coordinated makeup for your entire bridal party, ensuring everyone looks stunning and camera-ready.",
-            price: "From ₹150 per person",
+            price: "From ₹1200 per person",
             features: ["Coordinated looks", "On-location service", "Group discounts", "Timeline planning"]
         },
         {
             title: "Special Events",
             description: "Elegant makeup for engagement parties, rehearsal dinners, and other wedding-related celebrations.",
-            price: "From ₹200",
-            features: ["Event-appropriate looks", "Quick touch-ups", "Professional products", "Travel included"]
+            price: "From ₹1500",
+            features: ["Event-appropriate looks", "Quick touch-ups", "Professional products"]
         }
     ];
     // const CorouselContent = () => {
