@@ -36,7 +36,7 @@ export function Navbar() {
                         <div className="h-1 w-6 rounded-full bg-foreground"></div>
                         <div className="h-1 w-3 rounded-full bg-foreground"></div>
                     </span>
-                    <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold ">Numa.</Link>
+                    <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold ">Priya.</Link>
                 </div>
                 <NavigationMenu viewport={true} className="hidden lg:flex">
                     <NavigationMenuList className="instrument-font text-lg ">
@@ -102,7 +102,7 @@ export function Navbar() {
                             <span className="flex lg:hidden gap-1 flex-col px-2 py-3" role="button" aria-label="Open menu" tabIndex={0} onClick={() => setOpen(false)}>
                                 <X className="size-9 stroke-2" />
                             </span>
-                            <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold">Numa.</Link>
+                            <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold">Priya.</Link>
                         </div>
 
                         <div className="flex flex-col gap-8 instrument-font text-4xl items-center justify-center h-full ">
