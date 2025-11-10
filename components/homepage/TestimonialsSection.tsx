@@ -121,9 +121,9 @@ const reviews = [
 ];
 
 const insta_urls = [
-  "https://www.instagram.com/p/DNSZ0GxtFbj/?utm_source=ig_web_copy_link",
-  "https://www.instagram.com/p/DPGMoDvDJci/?utm_source=ig_web_copy_link",
-  "https://www.instagram.com/p/C0b53-Gg5Mv/?utm_source=ig_web_copy_link",
+  "https://www.instagram.com/p/DQhJ6LCDzm5vFnSNVX01cX-ttYfffN4NMxo7I80/",
+  "https://www.instagram.com/p/DLFpY2-val_n16N1vR0PSPwfHrDtwa3Quz7D1M0/",
+  "https://www.instagram.com/p/DJ1gRR_zv_hqyB6_03eFICLduYQjZR8WlJgNQE0/",
 
 
 
