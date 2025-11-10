@@ -93,7 +93,7 @@ const Bridal = () => {
                     <BlurFade delay={0.5} className='' blur="15px" inView>
                         <img
                             className=" size-110 object-cover hidden lg:block"
-                            src={"sarita.JPG"}
+                            src={"/sarita.JPG"}
                         />
                     </BlurFade>
                     <div className=' flex flex-col  items-center justify-center gap-7 '>
@@ -137,7 +137,7 @@ const Bridal = () => {
                     <BlurFade delay={0.5} className='mt-9 lg:mt-0' blur="15px" inView>
                         <img
                             className=" size-110 object-cover"
-                            src={"priyanka.JPG"}
+                            src={"/priyanka.JPG"}
                         />
                     </BlurFade>
                 </div>
