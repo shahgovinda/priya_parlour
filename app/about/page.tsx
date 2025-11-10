@@ -72,7 +72,7 @@ const page = () => {
                 <div className="grid grid-cols-1 gap-20 md:grid-cols-2 py-20 ">
                     <div className='flex justify-center'>
                         <h1 className='text-5xl font-bold instrument-font'>
-                            4 Years of Experience and <span>Exellence</span>
+                            10 Years of Experience and <span>Exellence</span>
                         </h1>
                     </div>
                     <div>
