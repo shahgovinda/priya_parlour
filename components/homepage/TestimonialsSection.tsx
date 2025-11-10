@@ -9,13 +9,13 @@ const reviews = [
     name: "Hiral Desai",
     username: "@HiralDesai",
     body: "Body waxing and facials done with great skill. Exceptional service.",
-    img: "/womano.png",
+    img: "/hiral.png",
   },
   {
     name: "Karishma Sawlani",
     username: "@karishmasawlani",
     body: "Very well done, on time and great service! Understands my needs",
-    img: "/woman.png",
+    img: "/karishma.png",
   },
 {
     name: "Richa Chitroda",
