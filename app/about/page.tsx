@@ -60,7 +60,7 @@ const page = () => {
                     <BlurFade delay={0.5} className='h-[30rem]' blur="15px" inView>
                         <img
                             className="rounded-[180px] mt-20 object-cover"
-                            src={"/girl.jpg"} />
+                            src={"/pcycle.jpg"} />
                     </BlurFade>
                     <BlurFade delay={0.5} className='h-[30rem] ' blur="15px" inView>
                         <img
