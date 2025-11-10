@@ -24,7 +24,7 @@ const Section3 = () => {
                                 fill
                                 className="object-cover"
                                 alt='Smiling woman getting beauty treatment'
-                                src="/smilingwoman.jpg"
+                                src="/piyas.png"
                             />
                         </div>
                     </BlurFade>
@@ -67,7 +67,7 @@ const Section3 = () => {
                                 fill
                                 className="object-cover"
                                 alt='Woman with healthy hair'
-                                src="/woman.jpg"
+                                src="/ppriyaj.jpg"
                             />
                         </div>
                         {/* <img
