@@ -41,18 +41,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Disable zooming */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        {/* ✅ Disable zoom but allow scroll */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <link rel="icon" href="/plogo2.png" type="image/png" />
       </head>
 
       <body
-        className={`${lexend.className} ${instrument.variable} ${carattere.variable} antialiased relative`}
-        style={{
-          overflow: "hidden", // disables scrolling
-          height: "100vh",
-          width: "100vw",
-        }}
+        className={`${lexend.className} ${instrument.variable} ${carattere.variable} antialiased relative scroll-smooth`}
       >
         <ThemeProvider
           attribute="class"
