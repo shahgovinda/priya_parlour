@@ -59,7 +59,7 @@ export default function RootLayout({
           </div>
 
         </ThemeProvider>
-        <Pointer>
+        {/* <Pointer>
            <svg
             width="24"
             height="24"
@@ -70,7 +70,7 @@ export default function RootLayout({
             <circle cx="12" cy="12" r="10" className="fill-purple-500" />
             <circle cx="12" cy="12" r="5" className="fill-white" />
           </svg>
-        </Pointer >
+        </Pointer > */}
       </body>
     </html>
   );
