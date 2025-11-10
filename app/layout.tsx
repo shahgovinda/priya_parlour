@@ -5,31 +5,31 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { BubbleBackground } from "@/components/animate-ui/backgrounds/bubble";
 import Footer from "@/components/Footer";
-import { Pointer } from "@/components/ui/pointer";
-// import CustomPointer from "@/components/CustomPointer";
-
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument-serif",
   subsets: ["latin"],
   weight: "400",
 });
+
 const lexend = Lexend({
   variable: "--lexend",
   subsets: ["latin"],
 });
+
 const carattere = Carattere({
   variable: "--font-carattere",
   subsets: ["latin"],
   weight: "400",
 });
 
-
 export const metadata: Metadata = {
   title: "Priya Parlour",
-  description: 'Beauty and Care Services',
+  description: "Beauty and Care Services",
   icons: {
-    icon: '/plogo2.png',
+    icon: "/plogo2.png",
+    shortcut: "/plogo2.png",
+    apple: "/plogo2.png",
   },
 };
 
@@ -40,40 +40,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${lexend.className} ${instrument.variable}  ${carattere.variable} antialiased relative scroll-smooth`}
-      >
+      <head>
+        {/* Disable zooming */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="icon" href="/plogo2.png" type="image/png" />
+      </head>
 
+      <body
+        className={`${lexend.className} ${instrument.variable} ${carattere.variable} antialiased relative`}
+        style={{
+          overflow: "hidden", // disables scrolling
+          height: "100vh",
+          width: "100vw",
+        }}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-
           <BubbleBackground
             interactive
-            className="fixed inset-0 hidden lg:flex  pointer-events-auto items-center justify-center rounded-xl"
+            className="fixed inset-0 hidden lg:flex pointer-events-auto items-center justify-center rounded-xl"
           />
-          <div className="relative flex flex-col">
+          <div className="relative flex flex-col min-h-screen">
             <Navbar />
-            {children}
+            <main className="flex-1">{children}</main>
             <Footer />
           </div>
-
         </ThemeProvider>
-        {/* <Pointer>
-           <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="12" cy="12" r="10" className="fill-purple-500" />
-            <circle cx="12" cy="12" r="5" className="fill-white" />
-          </svg>
-        </Pointer > */}
       </body>
     </html>
   );
