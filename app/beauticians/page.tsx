@@ -12,29 +12,17 @@ import Image from 'next/image';
 
 
 const beauticians = [
-  {
-    image: "/beauticians/beautician1.avif",
-    name: "Yelena Belova",
-    description: "\"Expert in modern hair styling and color treatments.\"",
-    skill: "Hair Stylist"
-  },
-  {
-    image: "/beauticians/beautician2.jpeg",
-    name: "Sophia Lee",
-    description: "\"Specializes in skincare routines and facial therapies.\"",
-    skill: "Skin Care Specialist"
-  },
-  {
-    image: "/beauticians/beautician3.jpeg",
-    name: "Sonia Gandhi",
-    description: "\"Renowned for creative makeup artistry for events.\"",
+   {
+    image: "/pia.jpg",
+    name: "Priya Shah",
+    description: "\"Expert in modern makeup and skin care.\"",
     skill: "Makeup Artist"
   },
   {
-    image: "/beauticians/beautician4.jpeg",
-    name: "Emma Stone",
-    description: "\"Professional nail technician with unique designs.\"",
-    skill: "Nail Artist"
+    image: "/deepa.jpg",
+    name: "Deepa Shah",
+    description: "\"Specializes in mehendi designs.\"",
+    skill: "Mehendi Designer"
   },
 
 ];
