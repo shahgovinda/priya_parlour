@@ -32,8 +32,8 @@ const services: Category[] = [
   {
     category: "Normal Waxing",
     services: [
-      { name: "Full Hand", price: 250 },
-      { name: "Full Leg", price: 400 },
+      { name: "Full Hand", price: 300 },
+      { name: "Full Leg", price: 500 },
       { name: "Underarms", price: 100 },
       { name: "Face Wax", price: 250 },
       { name: "B-Wax", price: 1000 },
@@ -53,8 +53,8 @@ const services: Category[] = [
   {
     category: "Facials & Cleanup",
     services: [
-      { name: "Normal Cleanup", price: 350 },
-      { name: "Fruit Clean-Up", price: 400 },
+      { name: "Normal Cleanup", price: 500 },
+      { name: "Fruit Clean-Up", price: 600 },
       { name: "Normal Bleach", price: 250 },
       { name: "Wella Bleach", price: 350 },
       { name: "Fruits Facial", price: 650 },
@@ -68,16 +68,16 @@ const services: Category[] = [
       { name: "Diamond", price: 1500 },
       { name: "O3+", price: 2500 },
       { name: "Manicure", price: 350 },
-      { name: "Pedicure", price: 400 },
-      { name: "Leg Massage", price: 200 },
-      { name: "Back Massage", price: 200 },
+      { name: "Pedicure", price: 800 },
+      { name: "Leg Massage", price: 250 },
+      { name: "Back Massage", price: 250 },
     ],
   },
   {
     category: "Hair",
     services: [
-      { name: "Touch Up", price: 150 },
-      { name: "Hair Oiling", price: 350 },
+      { name: "Touch Up", price: 200 },
+      { name: "Hair Oiling", price: 400 },
       { name: "Cut Strait", price: 150 },
       { name: "U Cut", price: 200 },
       { name: "Step Cut", price: 500 },
