@@ -6,41 +6,118 @@ import { motion } from 'framer-motion'
 import { InstagramEmbed } from 'react-social-media-embed';
 const reviews = [
   {
-    name: "Emily",
-    username: "@emilybeauty",
-    body: "I recently got a facial at this parlour and it was amazing! My skin feels so smooth and refreshed.",
-    img: "/makeup.jpg",
+    name: "Hiral Desai",
+    username: "@HiralDesai",
+    body: "Body waxing and facials done with great skill. Exceptional service.",
+    img: "/womano.png",
   },
   {
-    name: "Sarah",
-    username: "@sarahstyles",
-    body: "I've been going to this parlour for my haircuts and I'm always impressed with the service. The stylists are so talented!",
-    img: "hero.jpg",
+    name: "Karishma Sawlani",
+    username: "@karishmasawlani",
+    body: "Very well done, on time and great service! Understands my needs",
+    img: "/woman.png",
+  },
+{
+    name: "Richa Chitroda",
+    username: "@RichaChitroda",
+     body: "Her work is always neat, professional, and done with great care,highly recommended her for anyone looking for reliable and excellent service!",
+    img: "/richa.png",
   },
   {
-    name: "Jen",
-    username: "@jenmakeup",
-    body: "I got my makeup done for a wedding at this parlour and it was stunning! The makeup artist was so skilled and listened to exactly what I wanted.",
-    img: "/girl.jpg",
+    name: "Priyanka Shah",
+    username: "@priyankashah",
+    body: "What truly stood out was her ability to deliver a 'sweet' look that felt so authentic and bespoke. It wasn't just about the makeup – it was about creating a vibe that felt like me, only elevated.",
+    img: "/piyanka.png",
+  },
+{
+    name: "Sangita Mehta",
+    username: "@SangitaMehta",
+    body: "She provides the best professional parlor services at home. Highly convenient and excellent work",
+    img: "/sangita.png",
+  },
+{
+    name: "Ishita Manwani",
+    username: "@IshitaManwani",
+     body: "Very nice work. She’s a skilled professional with great service.",
+    img: "/ishita.png",
+  },
+{
+    name: "Sonam Mourya",
+    username: "@SonamMourya",
+     body: "Everyone must try.... The work is really very excellent💯💯",
+    img: "/sonam.png",
+  },
+
+  {
+    name: "Ila Nitin",
+    username: "@IlaNitin",
+     body: "Awesome wax on time, Facial massage i like most",
+    img: "/illa.png",
   },
   {
-    name: "Kate",
-    username: "@katebeauty",
-    body: "I've been going to this parlour for my nail appointments and I'm always happy with the result. The nail technicians are so friendly and talented!",
-    img: "/bridal/bridal (1).jpg",
+    name: "Jagruti Shah",
+    username: "@JagrutiShah",
+     body: "Cut done done awesome, Facil massage is fantastic, Pedicure also,On time she is.",
+    img: "/jagruti.png",
   },
+{
+    name: "Sarita Shah",
+    username: "@saritashah",
+     body: "I am so thrilled with the makeup services I received for my wedding. The artist was incredibly talented and made me feel beautiful and confident.",
+    img: "/saru.png",
+  },
+  
   {
-    name: "Mia",
-    username: "@miabeauty",
-    body: "I recently got a massage at this parlour and it was heavenly! The therapist was so skilled and relaxing.",
-    img: "/bridal/bridal (2).jpg",
+    name: "Foram Shah",
+    username: "@foramshah",
+    body: "Massage was good.",
+    img: "/foramshah.png",
   },
+   {
+    name: "Snehal Shinde",
+    username: "@SnehalShinde",
+    body: "Facil massage is good I like most, Head msg point is also I like most.",
+    img: "/snehal.png",
+  },
+ {
+    name: "Hiri Patel",
+    username: "@HiriPatel",
+    body: "Nice wax done,Pedicure nice.",
+    img: "/hiri.png",
+  }, 
   {
-    name: "Lily",
-    username: "@lilybeauty",
-    body: "I've been going to this parlour for my waxing appointments and I'm always impressed with the service. The technicians are so professional and gentle!",
-    img: "/bridal/bridal (3).jpg",
-  },
+    name: "Ami Modi",
+    username: "@AmiModil",
+    body: "Facial is awesom, Head massage was relaxing, On Time , Body waxing, Facials.",
+    img: "/ami.png",
+  },  
+
+  {
+    name: "Vaishnavi Patil",
+    username: "@VaishnaviPatil",
+    body: "Facial and mehendi service taken for function and it came out fantastic...Good Service at home.",
+    img: "/vaishnavi.png",
+  },  
+{
+    name: "Tannu Sharma",
+    username: "@tannusharma",
+    body: "I was very happy with the service😊👍, Plz visit atleast one time😊.",
+    img: "/tannu.png",
+  },  
+
+  {
+    name: "Gulfisha Khan",
+    username: "@gulfishakhan",
+    body: "I had a wonderful experience at this parlour! The staff were very friendly, professional, and made me feel completely comfortable. The services were done with great care and attention to detail..",
+    img: "/gulphisa.png",
+  }, 
+ {
+    name: "Deesha Vora",
+    username: "@deeshavora",
+    body: "Very reasonable pricing with excellent servie at home she provide.",
+    img: "/deesha.png",
+  }, 
+  
 ];
 
 const insta_urls = [
