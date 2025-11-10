@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { BubbleBackground } from "@/components/animate-ui/backgrounds/bubble";
 import Footer from "@/components/Footer";
+import Script from "next/script"; // ✅ Add this import for JS zoom control
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -41,11 +42,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* ✅ Prevent zoom on all pages */}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <link rel="icon" href="/plogo2.png" type="image/png" />
+        <link rel="icon" href="/plogo2.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/plogo2.png" />
       </head>
 
       <body
@@ -68,7 +71,7 @@ export default function RootLayout({
             <Footer />
           </div>
 
-          {/* ✅ Floating WhatsApp Button with your downloaded icon */}
+          {/* ✅ Floating WhatsApp Button */}
           <a
             href="https://wa.me/918452017063?text=Hello%20Priya%20Parlour,%20this%20is%20a%20message%20from%20your%20website."
             target="_blank"
@@ -77,12 +80,33 @@ export default function RootLayout({
             aria-label="Chat on WhatsApp"
           >
             <img
-              src="/whatsapp.png"   // ← Put your icon image here (inside /public)
+              src="/whatsapp.png"
               alt="WhatsApp Chat"
               className="whatsapp-icon"
             />
           </a>
         </ThemeProvider>
+
+        {/* ✅ Extra JS fallback to block Ctrl+Zoom and pinch gestures */}
+        <Script id="disable-zoom">
+          {`
+            document.addEventListener('wheel', function(e) {
+              if (e.ctrlKey) e.preventDefault();
+            }, { passive: false });
+
+            document.addEventListener('gesturestart', function(e) {
+              e.preventDefault();
+            });
+
+            document.addEventListener('gesturechange', function(e) {
+              e.preventDefault();
+            });
+
+            document.addEventListener('gestureend', function(e) {
+              e.preventDefault();
+            });
+          `}
+        </Script>
       </body>
     </html>
   );
