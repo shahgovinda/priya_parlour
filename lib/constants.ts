@@ -1,6 +1,6 @@
 
 export const Constant = {
-    SiteName : 'priya.',
+    SiteName : 'Priya.',
     PhoneNumber: '+91 84520 17063',
     Address: 'Saibaba Nagar, Borivali West, Mumbai 400092',
     Email: 'priyajayprakash456@gmail.com',
