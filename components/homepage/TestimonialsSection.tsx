@@ -121,9 +121,9 @@ const reviews = [
 ];
 
 const insta_urls = [
-  "https://www.instagram.com/p/DQhJ6LCDzm5vFnSNVX01cX-ttYfffN4NMxo7I80/",
-  "https://www.instagram.com/p/DLFpY2-val_n16N1vR0PSPwfHrDtwa3Quz7D1M0/",
-  "https://www.instagram.com/p/DJ1gRR_zv_hqyB6_03eFICLduYQjZR8WlJgNQE0/",
+  "https://www.instagram.com/priyashah2812/p/DJ1gRR_zv_hqyB6_03eFICLduYQjZR8WlJgNQE0/",
+  "https://www.instagram.com/priyashah2812/p/DLFpY2-val_n16N1vR0PSPwfHrDtwa3Quz7D1M0/",
+  "https://www.instagram.com/priyashah2812/p/DQhJ6LCDzm5vFnSNVX01cX-ttYfffN4NMxo7I80/",
 
 
 
