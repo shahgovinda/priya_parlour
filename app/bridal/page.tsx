@@ -43,21 +43,21 @@ const Bridal = () => {
             category: "Bridal Look",
             title: "Classic Red Bridal",
             src: "/sarita.JPG",
-            content: <Image src="/bridal/bridal (1).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+            content: <Image src="/sarita.JPG" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
         },
         {
             category: "Bridal Look",
             title: "Elegant Pastel Bride",
             src: "/priyanka.JPG",
-            content: <Image src="/bridal/bridal (2).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+            content: <Image src="/priyanka.JPG" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
         },
         {
             category: "Bridal Look",
             title: "Royal Gold Glam",
             src: "/bridal/bridal (3).jpg",
-            content: <Image src="/bridal/bridal (3).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+            content: <Image src="/bridal/bridal (3).jp" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
         },
         {
