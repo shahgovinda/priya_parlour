@@ -75,15 +75,15 @@ export default function Home() {
                     <div className="flex flex-col gap-5  items-center w-full lg:items-start ">
                         <div className="flex flex-col items-center lg:flex-row gap-8 ">
                             <div className="inline-flex  -space-x-2">
-                                <Avatar>
-                                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                                </Avatar>
-                                <Avatar>
-                                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                                </Avatar>
-                                <Avatar>
-                                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                                </Avatar>
+                               <Avatar>
+    <AvatarImage src="white.png" alt="Priya" />
+</Avatar>
+<Avatar>
+    <AvatarImage src="pinkk.png" alt="Priya" />
+</Avatar>
+<Avatar>
+    <AvatarImage src="white.png" alt="Priya" />
+</Avatar>
 
                             </div>
                             <p className="text-muted-foreground text-sm">200+ Satisfied Clients All Over Mumbai</p>
