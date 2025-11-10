@@ -62,22 +62,22 @@ const Footer = () => {
                         <p className="text-xl instrument-font ">Our Look Book</p>
                         <span className='grid grid-cols-3 gap-5'>
                             <Link href={"/look-book"} className='flex items-center  gap-2 text-sm cursor-pointer'>
-                                <Image src="/look-book/bridal (1).jpg" width={100} height={100} className='size-20 object-cover' alt="" />
+                                <Image src="/look-book/sarita.JPG" width={100} height={100} className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/look-book"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <Image src="/look-book/bridal (2).jpg" width={100} height={100} className='size-20 object-cover' alt="" />
+                                <Image src="/look-book/priyanka.JPG" width={100} height={100} className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/look-book"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <Image src="/look-book/girl.jpg" width={100} height={100} className='size-20 object-cover' alt="" />
+                                <Image src="/look-book/sarita.JPG" width={100} height={100} className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/look-book"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <Image src="/look-book/bridal (3).jpg" width={100} height={100} className='size-20 object-cover' alt="" />
+                                <Image src="/look-book/priyanka.JPG" width={100} height={100} className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/look-book"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <Image src="/look-book/makeup.jpg" width={100} height={100} className='size-20 object-cover' alt="" />
+                                <Image src="/look-book/sarita.JPG" width={100} height={100} className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/look-book"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <Image src="/look-book/bridal (2).jpg" width={100} height={100} className='size-20 object-cover' alt="" />
+                                <Image src="/look-book/priyanka.JPG" width={100} height={100} className='size-20 object-cover' alt="" />
                             </Link>
                         </span>
                     </div>
