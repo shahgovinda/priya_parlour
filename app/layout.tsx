@@ -26,8 +26,11 @@ const carattere = Carattere({
 
 
 export const metadata: Metadata = {
-  title: "Go Parlour",
-  description: "A Go Parlour app",
+  title: "Priya Parlour",
+  description: 'Beauty and Care Services',
+  icons: {
+    icon: '/plogo2.png',
+  },
 };
 
 export default function RootLayout({
