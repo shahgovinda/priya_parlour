@@ -174,27 +174,27 @@
   bottom: 25px;
   right: 25px;
   background-color: #25d366;
-  color: white;
   border-radius: 50%;
-  width: 58px;
-  height: 58px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
   animation: fadeInOut 2.5s infinite ease-in-out;
-  z-index: 1000;
+  z-index: 9999;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 16px rgba(37, 211, 102, 0.8);
+  box-shadow: 0 0 18px rgba(37, 211, 102, 0.8);
 }
 
 .whatsapp-icon {
-  font-size: 28px;
+  width: 34px;
+  height: 34px;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
 }
 
 /* Fade animation */
@@ -206,4 +206,3 @@
     opacity: 1;
   }
 }
-
