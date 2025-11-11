@@ -61,25 +61,25 @@ const Bridal = () => {
 
         },
         {
-            category: "Bridal Look",
-            title: "Traditional Green Saree",
-            src: "/look-book/portrait-smiling-beautiful-brunette-woman-cute-dress-red-lips-flowers-background-concept-professional-photossesion-modern-greenhouse.jpg",
-            content: <Image src="/look-book/portrait-smiling-beautiful-brunette-woman-cute-dress-red-lips-flowers-background-concept-professional-photossesion-modern-greenhouse.jpg"
+            category: "Casual Look",
+            title: "White Dress",
+            src: "/pia.jpg",
+            content: <Image src="/pia.jpg"
                 width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
         },
         {
-            category: "Bridal Look",
-            title: "Outdoor Day Bride",
-            src: "/look-book/pretty-lady-orange-dress-holding-umbrella-thinking-nature-daytime.jpg",
-            content: <Image src="/look-book/pretty-lady-orange-dress-holding-umbrella-thinking-nature-daytime.jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+                       category: "Bridal Look",
+            title: "Classic Red Bridal",
+            src: "/sarita.JPG",
+            content: <Image src="/sarita.JPG" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
         },
         {
             category: "Bridal Look",
-            title: "Fashion Portrait Bridal",
-            src: "/look-book/fashion-portrait-stylish-woman-colorful-print-long-sleeve-top-pink-shorts-beach-tropical-background.jpg",
-            content: <Image src="/look-book/fashion-portrait-stylish-woman-colorful-print-long-sleeve-top-pink-shorts-beach-tropical-background.jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+            title: "Elegant Pastel Bride",
+            src: "/priyanka.JPG",
+            content: <Image src="/priyanka.JPG" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
         }
     ];
