@@ -172,7 +172,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #ff4fa3; /* pink */
+  background-color: #ff4fa3; /* pink base */
   color: white;
   border-radius: 50%;
   width: 60px;
@@ -181,8 +181,8 @@
   justify-content: center;
   align-items: center;
   font-size: 28px;
-  box-shadow: 0 0 12px rgba(255, 79, 163, 0.5);
-  animation: pinkGlow 3s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(255, 79, 163, 0.5);
+  animation: pinkAura 3s ease-in-out infinite;
   transition: transform 0.3s ease;
   z-index: 50;
 }
@@ -191,22 +191,26 @@
   transform: scale(1.1);
 }
 
-@keyframes pinkGlow {
+@keyframes pinkAura {
   0% {
-    box-shadow: 0 0 8px rgba(255, 79, 163, 0.4),
-                0 0 16px rgba(255, 79, 163, 0.3);
+    box-shadow:
+      0 0 10px rgba(255, 79, 163, 0.6),
+      0 0 20px rgba(255, 79, 163, 0.3);
   }
   50% {
-    box-shadow: 0 0 25px rgba(255, 79, 163, 0.8),
-                0 0 45px rgba(255, 79, 163, 0.6);
+    box-shadow:
+      0 0 25px rgba(255, 79, 163, 0.8),
+      0 0 50px rgba(255, 79, 163, 0.4);
   }
   100% {
-    box-shadow: 0 0 8px rgba(255, 79, 163, 0.4),
-                0 0 16px rgba(255, 79, 163, 0.3);
+    box-shadow:
+      0 0 10px rgba(255, 79, 163, 0.6),
+      0 0 20px rgba(255, 79, 163, 0.3);
   }
 }
 
 .whatsapp-icon {
   width: 30px;
   height: 30px;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8)); /* Makes white icon stand out */
 }
