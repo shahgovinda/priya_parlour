@@ -197,7 +197,12 @@ export default function Page() {
                                         mode="single" 
                                         selected={date} 
                                         onSelect={setDate}
-                                        disabled={(date) => date <= new Date()} 
+                                        disabled={(date) => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); // remove time for comparison
+  return date < today; // disable only past dates, allow today & future
+}}
+ 
                                     />
                                 </PopoverContent>
                             </Popover>
