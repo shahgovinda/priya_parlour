@@ -57,7 +57,7 @@ const Bridal = () => {
             category: "Bridal Look",
             title: "Royal Gold Glam",
             src: "/bridal/bridal (3).jpg",
-            content: <Image src="/bridal/bridal (3).jp" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
+            content: <Image src="/bridal/bridal (3).jpg" width={600} height={500} alt="Bridal Look" className='w-full object-cover' />
 
         },
         {
