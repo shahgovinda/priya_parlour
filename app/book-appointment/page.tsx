@@ -72,8 +72,8 @@ export default function Page() {
     const audioElement = (
         <audio ref={audioRef} preload="auto">
             {/* Make sure /success.mp3 is placed in your public/ folder */}
-            <source src="/success.mp3" type="audio/mpeg" />
-            <source src="/success.ogg" type="audio/ogg" />
+            <source src="/booking.mp3" type="audio/mpeg" />
+            <source src="/booking.ogg" type="audio/ogg" />
             Your browser does not support the audio element.
         </audio>
     );
