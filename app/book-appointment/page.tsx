@@ -3,7 +3,7 @@ import { BlurFade } from '@/components/magicui/blur-fade'
 import { Input } from '@/components/ui/input'
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from '@/components/ui/select'
 import { services } from '@/data/services'
-import React, { useRef, useEffect } from 'react'; // <-- Import useEffect
+import React, { useRef, useEffect } from 'react'; 
 import { format } from "date-fns"
 import { Calendar } from "@/components/ui/calendar"
 import {
@@ -31,20 +31,11 @@ export default function Page() {
     const [date, setDate] = React.useState<Date>();
     const [time, setTime] = React.useState<string>("10:30");
     const [location, setLocation] = React.useState<string>("");
-    const [state, handleSubmit] = useForm("myzdvgzb");
+    const [state, submitForm] = useForm("myzdvgzb"); // Renaming handleSubmit to submitForm to avoid conflict
     const confettiRef = useRef<ConfettiRef>(null);
-    const audioRef = useRef<HTMLAudioElement>(null); // <-- NEW: Ref for the audio element
+    const audioRef = useRef<HTMLAudioElement>(null); 
 
-    // NEW: Effect to play sound on successful submission
-    useEffect(() => {
-        if (state.succeeded && audioRef.current) {
-            // Note: Autoplay restrictions might prevent this from working 
-            // without a user interaction on some browsers.
-            audioRef.current.play().catch(error => {
-                console.error("Audio play failed:", error);
-            });
-        }
-    }, [state.succeeded]);
+    // Remove the useEffect from the previous attempt, as we are now using the direct click handler.
 
     function handleSelect(value: string) {
         if (value && !selected.includes(value)) {
@@ -55,6 +46,23 @@ export default function Page() {
 
     function removeService(val: string) {
         setSelected(selected.filter(s => s !== val));
+    }
+
+    // NEW FUNCTION to wrap Formspree's submit and trigger audio first
+    async function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault(); // Prevent default submission initially
+
+        // 1. Try to play the success sound immediately upon button click
+        if (audioRef.current) {
+            // Using .play().catch() is good practice to handle browser policy blocks silently
+            audioRef.current.play().catch(error => {
+                console.warn("Audio play blocked by browser policy:", error);
+                // The form submission will proceed even if audio fails
+            });
+        }
+
+        // 2. Submit the form using Formspree's handler
+        submitForm(event);
     }
 
     // Show confirmation message in place of form
@@ -84,10 +92,8 @@ export default function Page() {
 
     return (
         <main className="container   lg:px-20 lg:py-20  py-5 mx-auto ">
-            {/* NEW: Audio element for success sound */}
+            {/* Audio element must be rendered when the form is visible */}
             <audio ref={audioRef} preload="auto">
-                {/* Replace '/success.mp3' with the actual path to your sound file */}
-                {/* A simple sound like a bell or chime is recommended. */}
                 <source src="/success.mp3" type="audio/mpeg" />
                 <source src="/success.ogg" type="audio/ogg" />
                 Your browser does not support the audio element.
@@ -104,7 +110,8 @@ export default function Page() {
                     </BlurFade>
                 </div>
                 <div className=" p-10 h-full ">
-                    <form onSubmit={handleSubmit} className=' flex flex-col justify-between h-full gap-5 md:gap-0'>
+                    {/* Use the new handleFormSubmit function */}
+                    <form onSubmit={handleFormSubmit} className=' flex flex-col justify-between h-full gap-5 md:gap-0'>
                         <div className='flex gap-5'>
                             <Input 
                                 type="text" 
