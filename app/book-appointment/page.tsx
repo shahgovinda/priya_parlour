@@ -3,7 +3,7 @@ import { BlurFade } from '@/components/magicui/blur-fade'
 import { Input } from '@/components/ui/input'
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from '@/components/ui/select'
 import { services } from '@/data/services'
-import React, { useRef, useEffect } from 'react'; 
+import React, { useRef } from 'react'; // Removed useEffect as we're playing directly from click handler
 import { format } from "date-fns"
 import { Calendar } from "@/components/ui/calendar"
 import {
@@ -31,11 +31,9 @@ export default function Page() {
     const [date, setDate] = React.useState<Date>();
     const [time, setTime] = React.useState<string>("10:30");
     const [location, setLocation] = React.useState<string>("");
-    const [state, submitForm] = useForm("myzdvgzb"); // Renaming handleSubmit to submitForm to avoid conflict
+    const [state, submitForm] = useForm("myzdvgzb"); 
     const confettiRef = useRef<ConfettiRef>(null);
     const audioRef = useRef<HTMLAudioElement>(null); 
-
-    // Remove the useEffect from the previous attempt, as we are now using the direct click handler.
 
     function handleSelect(value: string) {
         if (value && !selected.includes(value)) {
@@ -48,16 +46,21 @@ export default function Page() {
         setSelected(selected.filter(s => s !== val));
     }
 
-    // NEW FUNCTION to wrap Formspree's submit and trigger audio first
+    // UPDATED: Function to wrap Formspree's submit and ensure audio plays completely
     async function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault(); // Prevent default submission initially
 
-        // 1. Try to play the success sound immediately upon button click
+        // 1. Audio Playback Logic: Directly triggered by user click (highest success rate)
         if (audioRef.current) {
-            // Using .play().catch() is good practice to handle browser policy blocks silently
-            audioRef.current.play().catch(error => {
+            const audio = audioRef.current;
+            
+            // CRITICAL FIX: Reset audio position to 0 to play the full sound every time
+            audio.currentTime = 0; 
+
+            // Attempt to play and catch potential browser errors (Autoplay Policy)
+            audio.play().catch(error => {
                 console.warn("Audio play blocked by browser policy:", error);
-                // The form submission will proceed even if audio fails
+                // Optionally log the failure, but proceed with form submission
             });
         }
 
@@ -65,10 +68,22 @@ export default function Page() {
         submitForm(event);
     }
 
+    // Define Audio Element separately to ensure it is always available
+    const audioElement = (
+        <audio ref={audioRef} preload="auto">
+            {/* Make sure /success.mp3 is placed in your public/ folder */}
+            <source src="/success.mp3" type="audio/mpeg" />
+            <source src="/success.ogg" type="audio/ogg" />
+            Your browser does not support the audio element.
+        </audio>
+    );
+
     // Show confirmation message in place of form
     if (state.succeeded) {
         return (
             <main className="container h-svh lg:px-20 lg:py-20 px-5  mx-auto ">
+                {/* Render the audio element here too, though the sound is triggered before this state */}
+                {audioElement}
                 <div className="relative flex flex-col items-center justify-center gap-5 h-full">
                     <p className="text-2xl font-bold text-pink-600 instrument-font">
                         Your Appointment has been Booked.
@@ -92,12 +107,8 @@ export default function Page() {
 
     return (
         <main className="container   lg:px-20 lg:py-20  py-5 mx-auto ">
-            {/* Audio element must be rendered when the form is visible */}
-            <audio ref={audioRef} preload="auto">
-                <source src="/success.mp3" type="audio/mpeg" />
-                <source src="/success.ogg" type="audio/ogg" />
-                Your browser does not support the audio element.
-            </audio>
+            {/* Render the audio element when the form is visible */}
+            {audioElement}
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 <div className=''>
