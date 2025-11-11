@@ -46,7 +46,7 @@ const page = () => {
                     // whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 1 }}
                     className=" flex items-center justify-center rounded-full lg:w-[70rem] mt-5">
-                    <p className="text-sm leading-7 font-light flex justify-center text-center ">At {Constant.SiteName} Parlour, located in Saibaba Nagar, Borivali West, offers top-quality beauty and makeup services.With over 10 years of experience, we ensure professional care and stunning results every time..</p>
+                    <p className="text-sm leading-7 font-light flex justify-center text-center ">At {Constant.SiteName} Parlour, located in Saibaba Nagar, Borivali West, offers top-quality beauty and makeup services. With over 10 years of experience, we ensure professional care and stunning results every time..</p>
                 </motion.div>
             </div>
             <div className=''>
