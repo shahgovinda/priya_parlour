@@ -172,7 +172,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
+  background-color: #ff4fa3; /* pink */
   color: white;
   border-radius: 50%;
   width: 60px;
@@ -181,8 +181,8 @@
   justify-content: center;
   align-items: center;
   font-size: 28px;
-  box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
-  animation: glowPulse 2s infinite ease-in-out;
+  box-shadow: 0 0 12px rgba(255, 79, 163, 0.5);
+  animation: pinkGlow 3s ease-in-out infinite;
   transition: transform 0.3s ease;
   z-index: 50;
 }
@@ -191,15 +191,18 @@
   transform: scale(1.1);
 }
 
-@keyframes glowPulse {
+@keyframes pinkGlow {
   0% {
-    box-shadow: 0 0 8px rgba(37, 211, 102, 0.5);
+    box-shadow: 0 0 8px rgba(255, 79, 163, 0.4),
+                0 0 16px rgba(255, 79, 163, 0.3);
   }
   50% {
-    box-shadow: 0 0 25px rgba(37, 211, 102, 1);
+    box-shadow: 0 0 25px rgba(255, 79, 163, 0.8),
+                0 0 45px rgba(255, 79, 163, 0.6);
   }
   100% {
-    box-shadow: 0 0 8px rgba(37, 211, 102, 0.5);
+    box-shadow: 0 0 8px rgba(255, 79, 163, 0.4),
+                0 0 16px rgba(255, 79, 163, 0.3);
   }
 }
 
