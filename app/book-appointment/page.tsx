@@ -3,7 +3,7 @@ import { BlurFade } from '@/components/magicui/blur-fade'
 import { Input } from '@/components/ui/input'
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from '@/components/ui/select'
 import { services } from '@/data/services'
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react'; // <-- Import useEffect
 import { format } from "date-fns"
 import { Calendar } from "@/components/ui/calendar"
 import {
@@ -33,6 +33,18 @@ export default function Page() {
     const [location, setLocation] = React.useState<string>("");
     const [state, handleSubmit] = useForm("myzdvgzb");
     const confettiRef = useRef<ConfettiRef>(null);
+    const audioRef = useRef<HTMLAudioElement>(null); // <-- NEW: Ref for the audio element
+
+    // NEW: Effect to play sound on successful submission
+    useEffect(() => {
+        if (state.succeeded && audioRef.current) {
+            // Note: Autoplay restrictions might prevent this from working 
+            // without a user interaction on some browsers.
+            audioRef.current.play().catch(error => {
+                console.error("Audio play failed:", error);
+            });
+        }
+    }, [state.succeeded]);
 
     function handleSelect(value: string) {
         if (value && !selected.includes(value)) {
@@ -57,7 +69,6 @@ export default function Page() {
                         <Link href="/" className='flex p-1 items-center justify-center'>
                             <Button variant={"ghost"}>Home<ArrowUpRight /></Button>
                         </Link>
-                        {/* <Link href="/" className='text-base  border border-foreground instrument-font rounded-full px-3 cursor-pointer py-2'>HomePage</Link> */}
                     </div>
                 </div>
                 <Confetti
@@ -66,7 +77,6 @@ export default function Page() {
                     onMouseEnter={() => {
                         confettiRef.current?.fire({});
                     }}
-
                 />
             </main>
         );
@@ -74,6 +84,15 @@ export default function Page() {
 
     return (
         <main className="container   lg:px-20 lg:py-20  py-5 mx-auto ">
+            {/* NEW: Audio element for success sound */}
+            <audio ref={audioRef} preload="auto">
+                {/* Replace '/success.mp3' with the actual path to your sound file */}
+                {/* A simple sound like a bell or chime is recommended. */}
+                <source src="/success.mp3" type="audio/mpeg" />
+                <source src="/success.ogg" type="audio/ogg" />
+                Your browser does not support the audio element.
+            </audio>
+
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 <div className=''>
                     <BlurFade delay={1} className='relative' blur="15px" inView>
