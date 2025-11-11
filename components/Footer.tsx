@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-20 items-start">
                     <div className='flex flex-col gap-5'>
                         <Link href="/" className="text-4xl lg:text-4xl carattere-font font-bold ">{Constant.SiteName}</Link>
-                        <p className='text-sm text-justify'> {Constant.SiteName} Beauty Salon is perspiciatis omnis iste natus laundres veritatis et abster beatae vitae nunc sagittis interdum risusut accumsan.</p>
+                        <p className='text-sm text-justify'> {Constant.SiteName} Priya Parlour offers home-based beauty services for your comfort. Enjoy salon-quality care at affordable prices with professional results.</p>
                         <div className='flex justify-between mt-10'>
                             <Link href={Constant.Instagram}>
                                 <Button size={'icon'} className='rounded-full'><Instagram size={20} /></Button>
