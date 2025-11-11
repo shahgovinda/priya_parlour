@@ -89,7 +89,7 @@ export default function Home() {
                             <p className="text-muted-foreground text-sm">200+ Satisfied Clients All Over Mumbai</p>
                         </div>
                         <Link href="/book-an-appointment">
-                            <Button className="w-full ">Book an Appointment</Button>
+                             <Button className="w-full" onClick={() => navigate("/book-appointment")}>
                         </Link>
                     </div>
                     <div className="lg:col-span-2 flex flex-col lg:flex-row items-center justify-between text-7xl gap-12 lg:text-8xl">
