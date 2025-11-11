@@ -80,7 +80,7 @@ export default function RootLayout({
             aria-label="Chat on WhatsApp"
           >
             <img
-              src="/whatsapp.png"
+              src="/pwhatsapp.png"
               alt="WhatsApp Chat"
               className="whatsapp-icon"
             />
