@@ -84,7 +84,7 @@ const Footer = () => {
 
                 </div>
             </div>
-            <p className='text-center bg-background border-t py-5 text-xs'>Crafted with ❤️ by <a href="https://www.priyaparlour.in/" target="_blank" rel="noreferrer" className="text-pink-500 cursor-pointer">Priya Parlour</a></p>
+            <p className='text-center bg-background border-t py-5 text-xs'>Priya Parlour ❤️ <a href="https://www.priyaparlour.in/" target="_blank" rel="noreferrer" className="text-pink-500 cursor-pointer">Quality Service</a></p>
         </footer>
     )
 }
