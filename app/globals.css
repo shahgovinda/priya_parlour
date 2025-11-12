@@ -184,7 +184,7 @@
   box-shadow: 0 0 10px rgba(255, 79, 163, 0.5);
   animation: pinkAura 3s ease-in-out infinite;
   transition: transform 0.3s ease;
-  z-index: 50;
+  z-index: 10;
 }
 
 .whatsapp-float:hover {
@@ -212,5 +212,6 @@
 .whatsapp-icon {
   width: 30px;
   height: 30px;
+  z-index: 10;
   filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8)); /* Makes white icon stand out */
 }
