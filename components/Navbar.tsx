@@ -96,7 +96,7 @@ export function Navbar() {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -20 }}
-                        className="fixed top-0 left-0 h-screen w-screen flex flex-col  bg-background z-10 overflow-hidden" onClick={(e) => e.stopPropagation()} >
+                        className="fixed top-0 left-0 h-screen w-screen flex flex-col  bg-background z-20 overflow-hidden" onClick={(e) => e.stopPropagation()} >
 
                         <div className="flex items-center gap-2 py-2 px-7 ">
                             <span className="flex lg:hidden gap-1 flex-col px-2 py-3" role="button" aria-label="Open menu" tabIndex={0} onClick={() => setOpen(false)}>
